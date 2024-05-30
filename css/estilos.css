@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* NAVEGACION */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 103, 105);
+    height: 100px;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+
+a {
+    font-family: "Gloria Hallelujah", cursive;
+    color: rgb(157, 222, 139);
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 103, 105);
+    font-family:b"Poppins", sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 25px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* MAIN INDEX */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 248, 248);
+}
+
+.mainTitulo {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-family: "Gloria Hallelujah", cursive;
+    color: rgb(0, 103, 105);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.mainImagen {
+    border-radius: 50px;
+    height: 500px;
+    width: 300px;
+}
+
+.mainParrafo {
+    padding: 20px;
+    font-family: "Raleway", sans-serif;    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
+    color:  black;
+    align-self: center;
+}
+
+.mainAcceso {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainaccesoDestinos {
+    display: flex;
+    background-color: rgb(230, 255, 148);
+    padding: 15px;
+    margin: 10px;
+    margin-right: 20px;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    color: black;
+    width: 200px;
+    height: 150px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+}
+.mainaccesoColor {
+    color: black;
+}
+
+.mainaccesoFavoritos {
+    display: flex;
+    background-color: rgb(157, 222, 139);
+    padding: 15px;
+    margin: 10px;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    color: black;
+    width: 200px;
+    height: 150px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+
+}
+
+/* FAVORITOS */
+.gridContainer {
+    background-color: rgb(64, 165, 120);
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(230, 255, 148);
+    padding: 10px;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.gridNombre {
+    display: flex;
+    padding: 10px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+.gridImagen {
+    border-radius: 15px;
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .mainAcceso {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridItem {
+    width: 175px;
+    height: 275px;
+    }
+}
