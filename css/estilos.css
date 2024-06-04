@@ -130,7 +130,7 @@ main {
 }
 
 /* FAVORITOS */
-.gridContainer {
+.gridContainerfav {
     background-color: rgb(64, 165, 120);
     padding: 15px;
     display: grid;
@@ -139,7 +139,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.gridItem{
+.gridItemfav{
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -151,7 +151,7 @@ main {
     border-radius: 15px;
 }
 
-.gridNombre {
+.gridNombrefav {
     display: flex;
     padding: 10px;
     font-family: "Gloria Hallelujah", cursive;
@@ -160,9 +160,18 @@ main {
     color: black;
 }
 
-.gridImagen {
+.gridImagenfav {
     border-radius: 15px;
 }
+
+/* DESTINOS */
+
+.nombreDestinos {
+    font-weight: 600;
+    padding: 30px;
+}
+
+
 
 @media (min-width: 541px) and (max-width: 720px) {
     .navbar {
